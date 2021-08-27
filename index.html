@@ -1,0 +1,45 @@
+<html>
+<head>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dani7u7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Te amo 7u7 <3');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+<center>
+    <h1>Valeee, Me crees que te amo? </h1>
+
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+</center>
+
+<center>
+<img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/4/4f/latest/20111026141625/EP445_Brock_enamorado.jpg/180px-EP445_Brock_enamorado.jpg">
+
+</center>
+</body>
+</html>
